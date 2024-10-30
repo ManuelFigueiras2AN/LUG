@@ -66,7 +66,7 @@ namespace Controladora
         }
 
 
-        public bool EditarDrogueria(Drogueria drogueria)
+        public bool ModificarDrogueria(Drogueria drogueria)
         {
             try
             {

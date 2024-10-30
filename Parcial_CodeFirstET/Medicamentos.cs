@@ -101,7 +101,7 @@ namespace Parcial1Entity
         private void RecuperarMedicamentos()
         {
             dgv_medicamentos.AutoGenerateColumns = false;
-            dgv_medicamentos.DataSource = controladoraMedicamentos.RecuperarMedicamentos();
+            dgv_medicamentos.DataSource = controladoraMedicamentos.ListarMedicamentos();
             dgv_medicamentos.Columns.Clear();
 
             dgv_medicamentos.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Medicamento ID", DataPropertyName = "Id" });

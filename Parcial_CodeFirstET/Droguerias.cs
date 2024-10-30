@@ -49,7 +49,7 @@ namespace Parcial1Entity
                 drogueria.Direccion = txt_direccion.Text;
                 drogueria.Email = txt_correo.Text;
                 drogueria.Cuit = Convert.ToInt64(txt_cuit.Text);
-                if (controladoraDroguerias.Agregardrogueria(drogueria))
+                if (controladoraDroguerias.AgregarDrogueria(drogueria))
                 {
                     Refrescar();
                     LimpiarCampos();
