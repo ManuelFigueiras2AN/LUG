@@ -63,10 +63,8 @@ namespace Controladora
         {
             try
             {
-                //var medicamentoExiste = _context.Medicamentos.FirstOrDefault(m => m.NombreComercial == medicamento.NombreComercial);
-                var medicamentoExiste = _context.Medicamentos
-                .Include(m => m.Monodroga)  // Incluir la entidad relacionada
-                .FirstOrDefault(m => m.NombreComercial == medicamento.NombreComercial);
+                var medicamentoExiste = _context.Medicamentos.FirstOrDefault(m => m.NombreComercial == medicamento.NombreComercial);
+               
                 if (medicamentoExiste != null)
                 {
                     // Actualizar la entidad `Monodroga` si es diferente

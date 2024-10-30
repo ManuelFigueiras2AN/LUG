@@ -62,5 +62,10 @@ namespace Modelo
                 return false;
             }
         }
+
+        public string NombreMonodroga
+        {
+            get { return Monodroga != null ? Monodroga.Nombre : "error en monodroga"; }
+        }
     }
 }
